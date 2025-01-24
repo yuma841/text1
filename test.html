@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>実技テスト</title>
+</head>
+<style>
+.content{
+    display: grid;
+    background-color:  rgb(241, 241, 221);
+    height: 130px;
+    gap: 15px;
+    width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.box{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.text{
+    background-color: black;
+    color: white;
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+}
+
+label {
+  display: block;
+  font:
+    1rem 'Fira Sans',
+    sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+
+
+@media(max-width:767px){
+    .content{
+        grid-template-columns: 1fr 1fr;
+        height: 240px;
+    }
+    .text{
+
+    }
+}
+</style>
+
+<body>
+    <div class="content">
+        <p class="box"></p>
+        <p class="box"></p>
+        <p class="box"></p>
+        <p class="box"></p>
+    </div>
+    <h1 class="text">文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+        文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+    </h1>
+    <div style="text-align:center">
+    <img src="../実技テスト/img/kapi.webp" alt="カピパラ">
+    </div>
+
+
+    <div style="margin-left:220px;">
+       <label for="name">名前</label>
+       <input type="text" id="name" name="name"required minlength="4" maxlength="8" size="10"/>
+        <p></p>
+    </div>
+
+</body>
+</html>
